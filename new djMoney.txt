@@ -6,7 +6,7 @@
 Таблицы:
 
 USERS (пользователи)
-
+------
 id int первичный ключ
 email varchar
 password varchar (MD5)
@@ -14,8 +14,25 @@ password varchar (MD5)
 STORY - истории ( с прежней таблицы )
 
 TAGS -теги
-
+-----------
 id int первичный ключ
 tag text
+
+ROLES - роли
+---------------------
+id int первичный ключ
+iduser 
+naimroles
+
+STORYTAGS таблица связывающая 2 таблицы
+---------------------------------------
+storyid int (первичный
+tagsid  int  ключ)
+
+
+
+
+ 
+
 
 
